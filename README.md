@@ -1,5 +1,12 @@
 # Optical Character Recognition and Feature Extraction
-This repository contains implementation of optical character recognition and feature extraction using both MLP and CNN.
+This repository contains implementation of optical character recognition and feature extraction using both MLP and CNN.  
+Bounding box extraction and detection staff is not magical! It's possible to achieve this using a single-layer neural network and sufficient image manipulation skills instead of a bulky Region-CNN.  
+Here is the pipeline of how it is implemented from scratching, all you need is Numpy and Scikit-image, no fancy Deep Learning Framework I promise.
+```
+Raw image -> Extraction -> Recognition -> Readable Texts  
+Extraction: denoise->greyscale->threshold->morphology->clear border->label->measure region->plot box
+Recognition: Train nn on NIST36->load resized/scaled bbox->run nn
+```
 
 ## Files included
 **src/util.py** contains derivative of various activation functions  
