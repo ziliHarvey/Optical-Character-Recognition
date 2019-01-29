@@ -15,12 +15,22 @@ This repository contains implementation of optical character recognition and fea
 **src/cnnVisualization.py** visualizing feature maps and filters in a trained cnn  
 
 ## Hand-written texts extraction and recognition
+```
+python textExtraction.py
+```
 <img src="https://github.com/ziliHarvey/Optical-Character-Recognition/raw/master/images/02_letters.jpg" width=30%><img src="https://github.com/ziliHarvey/Optical-Character-Recognition/raw/master/results/Figure_1.png" width=40%><img src="https://github.com/ziliHarvey/Optical-Character-Recognition/raw/master/results/Figure_2.png" width=20%>
 
 ## Image compression  
+```
+python vaeCompression.py  
+python pcaCompression.py
+```
 <img src="https://github.com/ziliHarvey/Optical-Character-Recognition/raw/master/results/Figure_3.png" width=40%><img src="https://github.com/ziliHarvey/Optical-Character-Recognition/raw/master/results/Figure_4.png" width=40%>
 
 ## Convolutional network visualization
+```
+python cnnVisualization.py
+```
 ### Dataset
 <img src="https://github.com/ziliHarvey/Optical-Character-Recognition/raw/master/results/Figure_5.png" width=50% height=50%>
 
